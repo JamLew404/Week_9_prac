@@ -1,5 +1,6 @@
 __author__ = 'Jeffrey'
 
+
 def displaying_countries():
     countries_listed = []
     in_file = open('guitars.csv', 'r', newline='')
@@ -7,9 +8,6 @@ def displaying_countries():
         words = line.strip().split(",")
         new_guitar = Guitars(words[0], words[1], words[2])
         guitars_list.append(new_guitar)
-
-
-
 
 
 def printing_name_file():

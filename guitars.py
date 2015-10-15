@@ -15,7 +15,6 @@ class Guitars:
         if year < 0:
             raise GuitarError("Age cannot be less than 0!")
 
-
     def get_age(self):
         current_year = 2015
         age_of_guitar = current_year - int(self.year)
@@ -30,7 +29,7 @@ class Guitars:
             return False
 
     def __str__(self):
-        return ' " {:>20} was made in {:>6} and is worth ${:10.2f}" '.format(self.name, self.year,self.cost)
+        return ' " {:>20} was made in {:>6} and is worth ${:10.2f}" '.format(self.name, self.year, self.cost)
 
 
 boo = Guitars("bob", -9, 123)

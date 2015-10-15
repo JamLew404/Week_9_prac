@@ -56,7 +56,7 @@ def usingcsv():
 # usingcsv()
 
 
-def usingnamedtuple():
+def using_named_tuple():
     in_file = open('languages.csv', 'r', newline='')
     file_field_names = in_file.readline().strip().split(',')
     print(file_field_names)
